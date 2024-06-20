@@ -1,0 +1,158 @@
+
+ <!DOCTYPE html>
+ <html lang="zxx">
+    <head>
+       <title></title>
+       <!--meta tags -->
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="keywords" content="Pension care Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+          Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+       <script>
+          addEventListener("load", function () {
+              setTimeout(hideURLbar, 0);
+          }, false);
+          
+          function hideURLbar() {
+              window.scrollTo(0, 1);
+          }
+       </script>
+       <!--//meta tags ends here-->
+       <!--booststrap-->
+       <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+       <!--//booststrap end-->
+       <!-- font-awesome icons -->
+       <link href="/static/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+       <!-- //font-awesome icons -->
+       <!-- For Text About slider -->
+       <link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="all" />
+       <!-- //For Text About slider -->
+       <!-- For Service pie-chart -->
+       <link rel="stylesheet" href="/static/css/morris.css">
+       <!--//For Service pie-chart -->
+       <!--stylesheets-->
+       <link href="/static/css/style.css" rel='stylesheet' type='text/css' media="all">
+       <!--//stylesheets-->
+       <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    </head>
+    <body>
+      {% if msg %}
+      <script>
+          alert('{{msg}}');
+      </script>
+      {% endif %}
+       <div class="header-outs" id="home">
+          <div class="header-w3layouts">
+             <!--//navigation section -->
+             <div class="headr-title text-center">
+                <h1><a class="navbar-brand" href="index.html"><span class="fab fa-servicestack"></span>P care</a></h1>
+                <div class="clearfix"></div>
+             </div>
+             <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-	controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  nav-fill " id="navbarSupportedContent">
+                   <ul class="navbar-nav nav-pills nav-fill">
+                   
+                      <li class="nav-item">
+                         <a href="/" class="nav-link ">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/clerkreg" class="nav-link ">Clerk Register</a>
+                     </li>
+                  </ul>
+                </div>
+             </nav>
+          </div>
+       <!-- //Navigation -->
+       <!-- banner -->
+       <div class="inner_page-banner">
+       </div>
+       <!--//banner -->
+       <!-- short -->
+       <div class="using-border py-3">
+          <div class="inner_breadcrumb  ml-4">
+             <ul class="short_ls">
+                <li>
+                   <a href="/">Home</a>
+                   <span>/ /</span>
+                </li>
+                <li>login</li>
+             </ul>
+          </div>
+       </div>
+       <!-- //short-->
+       <!--about-->
+       <!--about-one-->
+ 
+ <div class="wls-login-form">
+ <center>
+                      <br><h4>Log In</h4>
+                    <form method="POST">  
+                     {% csrf_token %} 
+     <table>
+     <tr><td>
+                         <div class="form-group  fill-all-form">
+                         USER ID :</td><td> <input type="text" name="uid"class="form-control" placeholder=" Phone Number">
+                         </div></td></tr>
+           <div class="form-group  fill-all-form">
+                           <tr><td>PASSWORD:</td><td><input type="Password"name="pswd" class="form-control" placeholder="Password">
+                         </tr></td></div>
+
+                           <tr></tr>
+                           <tr></tr>
+  
+         </table>
+         <div class="form-group  fill-all-form">
+                    <br><input type="submit" style="width: 150px;" name="login" value="login" class="btn click-me btn-block" >	
+                            </div>
+                         </div>
+     </form>
+   </center>                </div>
+                   </div>
+                </div>
+                
+       <!--Footer -->
+       <!-- //Footer -->
+       <!--js working-->
+       <script src='/static/js/jquery-2.2.3.min.js'></script>
+       <!--//js working-->
+       <!-- start-smoth-scrolling -->
+       <script src="/static/js/move-top.js"></script>
+       <script src="/static/js/easing.js"></script>
+       <script>
+          jQuery(document).ready(function ($) {
+              $(".scroll").click(function (event) {
+                  event.preventDefault();
+                  $('html,body').animate({
+                      scrollTop: $(this.hash).offset().top
+                  }, 900);
+              });
+          });
+       </script>
+       <!-- start-smoth-scrolling -->
+       <!-- here stars scrolling icon -->
+       <script>
+          $(document).ready(function () {
+          
+              var defaults = {
+                  containerID: 'toTop', // fading element id
+                  containerHoverID: 'toTopHover', // fading element hover id
+                  scrollSpeed: 1200,
+                  easingType: 'linear'
+              };
+          
+          
+              $().UItoTop({
+                  easingType: 'easeOutQuart'
+              });
+          
+          });
+       </script>
+       <!-- //here ends scrolling icon -->
+       <!--bootstrap working-->
+       <script src="/static/js/bootstrap.min.js"></script>
+       <!-- //bootstrap working-->
+    </body>
+ </html>
